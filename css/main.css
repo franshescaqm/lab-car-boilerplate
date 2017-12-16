@@ -1,4 +1,18 @@
+.container-fluid{
+  outline: 3px solid black;
+}
 
-body { 
-  padding-top: 70px; 
+.img-1{
+  position: relative;
+  left: 4em;
+  bottom: 1em;
+}
+
+button[type]{
+  width: 3em;
+  height: 2em;
+}
+
+.img-responsive{
+  max-width: 768px;
 }
