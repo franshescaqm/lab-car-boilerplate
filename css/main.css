@@ -1,18 +1,39 @@
-.container-fluid{
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body { 
+  padding-bottom: 70px;
+ }
+
+.container-fluid {
   outline: 3px solid black;
 }
 
-.img-1{
-  position: relative;
-  left: 4em;
-  bottom: 1em;
-}
-
-button[type]{
+button[type] {
   width: 3em;
   height: 2em;
 }
 
-.img-responsive{
-  max-width: 768px;
+.footer {
+  color:whitesmoke;
+  background-color: #2b2b2b;
+  height: 23em;
+  padding-left: 1em;
+}
+
+.icons {
+  float: left; 
+  margin-left: 0%;
+}
+
+
+.android {
+  width: 7em;
+}
+
+.apple {
+  width: 7em;
 }
