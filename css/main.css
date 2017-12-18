@@ -37,3 +37,18 @@ button[type] {
 .apple {
   width: 7em;
 }
+
+.map{
+  background-color: #f7b617;
+  color: white;
+  height: 20em;
+}
+
+.location {
+  outline: 2px solid red;
+}
+
+.space{
+  outline: 2px solid purple;
+  
+}
