@@ -17,6 +17,14 @@ button[type] {
   height: 2em;
 }
 
+.taxi-img {
+  background-image: url(../assets/images/taxi.jpg);
+  background-position: center bottom;
+  background-size:cover;
+  height: 60em;
+  width: 100%;
+}
+
 .footer {
   color:whitesmoke;
   background-color: #2b2b2b;
