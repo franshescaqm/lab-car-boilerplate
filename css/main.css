@@ -1,58 +1,155 @@
+/*Universal style*/
 *{
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
   margin: 0%;
   padding: 0%;
 }
 
-body { 
-  padding-bottom: 70px;
- }
-
-.container-fluid {
-  outline: 3px solid black;
+/*Header Navbar Section*/
+.first-container {
+  outline: 2px solid black;
 }
 
-button[type] {
-  width: 3em;
-  height: 2em;
+.first-logo {
+height: 1.3em;
 }
 
+.navbar-style{
+ margin-left: 1em;
+}
+
+/*Taxi Image Container Section*/
 .taxi-img {
   background-image: url(../assets/images/taxi.jpg);
   background-position: center bottom;
   background-size:cover;
-  height: 60em;
-  width: 100%;
+  background-repeat: no-repeat;
+  height: 105vh;
 }
 
-.footer {
-  color:whitesmoke;
-  background-color: #2b2b2b;
-  height: 23em;
-  padding-left: 1em;
+.container-box {
+  background-color: #F7B617;
+  padding: 2.8em;
+  color:white;
+  position: relative;
+  top: 10.5em;
 }
 
-.icons {
-  float: left; 
-  margin-left: 0%;
+.second-logo {
+width: 4.5em;
 }
 
-
-.android {
-  width: 7em;
+.middle-word {
+  position: relative;
+  bottom: 1.9em;
+  font-size: 17px;
+  font-weight: 700;
 }
 
-.apple {
-  width: 7em;
-}
+/* App introduction section*/
 
-.map{
+.main-color {
   background-color: #f7b617;
+}
+
+.outline-div {
+  outline: 1px solid white;
+  margin-top: 2.5em;
+  margin-bottom:3em;
+}
+
+/* frame on center when on mobile */
+@media (max-width: 768px) { 
+  .outline-div {
+    outline: 1px solid white;
+    margin-top: 2.5em;
+    margin-bottom:3em;
+    margin-left: 2em;
+  }
+
+  .mob-title{
+    margin: 1.5em  0em 0em 3.8em;
+  }
+
+  .mob-info {
+    margin-left: 1em;
+  }
+ }
+
+.phone-img {
+  height: 14em;
+  margin-top: 2em;
+  margin-bottom:1em;
+  margin-left: 13em;
+}
+
+/* phone size on mobile */
+@media (max-width: 768px) { 
+  .phone-img {
+    height: 14em;
+    margin-top: 2em;
+    margin-bottom:1em;
+    margin-left: 3em;
+  }
+ }
+
+.description-color {
   color: white;
-  height: 20em;
 }
 
-.location {
-  outline: 2px solid red;
+/* Be a driver introduction section*/
+
+.driver-img {
+  background-image: url(../assets/images/conduce.jpg);
+  background-position: center left;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 85vh;
 }
 
+/* driver image size on mobile */
+@media (max-width: 768px) { 
+  .driver-img {
+    background-image: url(../assets/images/conduce.jpg);
+    background-color: rgba(17, 17, 16, 0.5);
+    background-position: 20%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 68vh;
+  }
+ }
+
+.transparent-div {
+  background-color: rgba(17, 17, 16, 0.5);
+  height: 85vh;
+  color: white;
+  padding: 11em 16em 0em 0em;
+}
+
+/* transparent image size on mobile */
+@media (max-width: 768px) { 
+  .transparent-div {
+    background-color: rgba(17, 17, 16, 0.5);
+    color: white;
+    height: 68vh;
+  }
+ }
+
+ .Bdriver-btn{
+  background-color: rgba(247, 182, 23, 0.1);
+ }
+
+/*tracing the rute section*/
+.container-box-two {
+  background-color: #F7B617;
+  padding: 2.8em;
+  color:white;
+  position: relative;
+}
+
+.round-border{
+  border-radius: 10em;
+  background-color: rgb(247, 182, 23);
+  border-color: white;
+}

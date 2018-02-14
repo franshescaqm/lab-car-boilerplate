@@ -1,94 +1,143 @@
 <!-- Suelta tus manos y tu mente para solucionar este reto -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>Lab<ar</title>
+    <title>Lab
+        <ar</title>
 </head>
+
 <body>
-    <!-- menu Header navbar -->
-    <div class="container-fluid" >
-        <div class="dropdown">
-                <button  class="glyphicon glyphicon-menu-hamburger" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
-                <ul class="dropdown-menu"    aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Viaja</a></li>
-                    <li><a href="#">Conduce</a></li>
-                    <li><a href="#">Inicia Sesión</a></li>
-                </ul>
-                </div>
-             <a class="navbar-brand col-xs-12 col-md-12" href="#">
-    <img class="logo-1 " alt="logo-1" src="assets/images/logoForma.png">
-             </a>
-            </header>
-        </div>
-    </div>
- <!-- End of Menu header navbar -->
-    <!--navigation start: part 1-->
-    <div class="container col-xs-12 col-sm-12 col-md-12">
-    <!--Container de Imagen de Taxi -->
-            <div class="taxi-img">
-
+    <!-- Header navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid first-container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed pull-left navbar-style" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logoForma.png" class="first-logo" alt="logo">
+                </a>
             </div>
-    </div>
-<!-- End of navigation: part 1-->
 
-    <!--start Navigation: part 2-->
-     <section class="col-xs-12 col-md-12 map">
-            <h1>Tarifas</h1>
-            <h2>Consulta las tarifas de LabCar aquí!</h2>
-            <span class="space"><img src="assets/images/shape.png" alt="circle"></span><input type="text" class="form-control" placeholder="Ruta de Ida" aria-describedby="sizing-addon1">
-            <span class="space"><img src="assets/images/shape2.png" alt="circle"></span><input type="text" class="form-control" placeholder="Ruta de Regreso" aria-describedby="sizing-addon1">
-    
-            <button class="btn btn-default col-xs-2 col-sm-3 col-md-4 container">Traza tu Ruta
-            </button>
-     </section>
-    <!--footer-->
-    <section >
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <footer class="footer">
-                        <br>
-                        <img alt="logo-3" src="assets/images/logoBlanco.png">
-                        <hr>
-                        <div>
-                            <p>Viaje</p>
-                            <p>Conduce</p>
-                            <p>Cuidades</p>
-                            <p>Entregas</p>
-                            <p>Como Funciona?</p>
-                            <p>Países</p>
-                            <p>Seguridad</p>
-                        <div>
-                        <div class="icons img-responsive col-xs-12 col-sm-12 col-md-12"> 
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            <i class="fa fa-apple" aria-hidden="true"></i>
-                            <i class="fa fa-play" aria-hidden="true"></i>
-                            <div class="logo-pic img-responsive">
-                                <img class="android" src="assets/images/enBadgeWebGeneric.png" alt="android">
-                                <br>
-                                <img class="apple" src="assets/images/appstore.png" alt="appstore">
-                            </div>
-                        </div>
-                            <br>
-                            <hr>
-                                <p><span>&#169;</span> 2017 LabCar Technologies Inc.</p>
-                        </div>
-                        
-                    </footer>
-                <div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Inicia Sesión</a>
+                    </li>
+                    <li>
+                        <a href="#">Viaja</a>
+                    </li>
+                    <li>
+                        <a href="#">Conduce</a>
+                    </li>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Taxi image container -->
+    <section class="container-fluid taxi-container">
+        <div class="row">
+            <div class="taxi-img">
+                <div class="container-box col-xs-9 col-xs-offset-3 col-md-5 col-md-offset-7">
+                    <h3 class="hidden-xs">Disfruta Del Viaje</h3>
+                    <h3 class="hidden-xs">Se Dueño de tu tiempo</h3>
+                    <h4 class="hidden-xs">Viaja Con
+                        <span>
+                            <img src="assets/images/logoBlanco.png" alt="Logo_Title" class="title2">
+                        </span>
+                    </h4>
+                    <h2 class="visible-xs">Comienza a Viajar Con
+                        <span>
+                            <img src="assets/images/logoBlanco.png" alt="Logo_Title" class="second-logo">
+                        </span>
+                    </h2>
+                    <button type="button" class="btn btn-default hidden-xs">
+                        Regístrate
+                    </button>
+                    <button type="button" class="btn btn-default btn-lg visible-xs">Descarga El App</button>
+                    <hr class="hidden-xs">
+                    <p class="text-center hidden-xs middle-word"> O Bien</p>
+                    <button type="button" class="btn btn-default hidden-xs">Sé un conductor</button>
+                </div>
+            </div>
+        </div>
     </section>
-     <!--end of footer-->
+    <!-- app introduction -->
+    <section class="container-fluid main-color app-introduction">
+        <div class="row">
+            <div class="col-md-8 col-xs-10 outline-div description-color">
+                <figure class="pull-left list-inline">
+                    <h3 class="text-nowrap visible-xs mob-title"> La nueva app</h3>
+                    <img src="assets/images/iPhone6Plus.png" class="phone-img list-inline" alt="phone-img">
+                </figure>
+                <div class="description-color list-inline pull-right col-md-5">
+                    <h2 class="hidden-xs mob-title">Descarga La Nueva App</h2>
+                    <p class="text-left hidden-xs">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil
+                        y rápido</p>
+                    <br>
+                    <p class="text-left hidden-xs">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe
+                        exactamente a dónde ir.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h5 class="text-nowrap description-color visible-xs mob-info">Llega a tu destino aún más rapido</h5>
+        </div>
+    </section>
+    <!--  Be a driver introduction -->
+    <section class="container-fluid be-driver">
+        <div class="row">
+            <div class="driver-img">
+                <div class="column">
+                    <div class="pull-right col-md-4 col-md-offset-4 descripton-color transparent-div">
+                        <div class="col-xs-12 col-xs-offset-7 col-sm-10">
+                            <h3 class="text-nowrap hidden-xs ">Conduce cuando quieras</h3>
+                            <h3 class="text-nowrap visible-xs">Conduce cuando quieras</h3>
+                            <p class="text-justify">Labcar es una opción flexible para alcanzar tus metas financieras</p>
+                            <button type="button" class="btn btn-warning Bdriver-btn">
+                                Conviértete en un Conductor
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--tracing the rute-->
+    <section class="container-fluid container-box-two">
+        <div class="row">
+            <div class="column">
+                <h2>Tarifas</h2>
+                <h3>Consulta las tarifas de LabCar aquí</h3>
+                <span>
+                    <img src="assets/images/shape.png" alt="dot"> <div class="form-group">
+                            <label for="inputPassword2" class="sr-only">Password</label>
+                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                          </div></span>
+            </div>
+        </div>
+    </section>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <!--<script src="js/app.js"></script>-->
 </body>
