@@ -6,11 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+    <!--font-awesome link-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!--CSS link-->
     <link rel="stylesheet" href="css/main.css">
     <title>Lab
         <ar</title>
@@ -37,13 +41,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Inicia Sesión</a>
+                    <li class="orange-color">
+                        <a href="#" data-toggle="modal" data-target="#start-session">Inicia Sesión</a>
                     </li>
-                    <li>
+                    <li class="orange-color">
                         <a href="#">Viaja</a>
                     </li>
-                    <li>
+                    <li class="orange-color">
                         <a href="#">Conduce</a>
                     </li>
             </div>
@@ -60,7 +64,7 @@
                     <h3 class="hidden-xs">Se Dueño de tu tiempo</h3>
                     <h4 class="hidden-xs">Viaja Con
                         <span>
-                            <img src="assets/images/logoBlanco.png" alt="Logo_Title" class="title2">
+                            <img src="assets/images/logoBlanco.png" alt="Logo_Title">
                         </span>
                     </h4>
                     <h2 class="visible-xs">Comienza a Viajar Con
@@ -68,13 +72,13 @@
                             <img src="assets/images/logoBlanco.png" alt="Logo_Title" class="second-logo">
                         </span>
                     </h2>
-                    <button type="button" class="btn btn-default hidden-xs">
+                    <button type="button" class="btn btn-default hidden-xs" data-toggle="modal" data-target="#register">
                         Regístrate
                     </button>
                     <button type="button" class="btn btn-default btn-lg visible-xs">Descarga El App</button>
                     <hr class="hidden-xs">
                     <p class="text-center hidden-xs middle-word"> O Bien</p>
-                    <button type="button" class="btn btn-default hidden-xs">Sé un conductor</button>
+                    <button type="button" class="btn btn-default hidden-xs" data-toggle="modal" data-target="#modal-driver"> Se un conductor </button>
                 </div>
             </div>
         </div>
@@ -87,8 +91,8 @@
                     <h3 class="text-nowrap visible-xs mob-title"> La nueva app</h3>
                     <img src="assets/images/iPhone6Plus.png" class="phone-img list-inline" alt="phone-img">
                 </figure>
-                <div class="description-color list-inline pull-right col-md-5">
-                    <h2 class="hidden-xs mob-title">Descarga La Nueva App</h2>
+                <div class="description-color list-inline pull-right col-md-5 col-sm-7">
+                    <h2 class="hidden-xs mob-title pull-left">Descarga La Nueva App</h2>
                     <p class="text-left hidden-xs">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil
                         y rápido</p>
                     <br>
@@ -106,12 +110,12 @@
         <div class="row">
             <div class="driver-img">
                 <div class="column">
-                    <div class="pull-right col-md-4 col-md-offset-4 descripton-color transparent-div">
-                        <div class="col-xs-12 col-xs-offset-7 col-sm-10">
+                    <div class="pull-right col-sm-8 col-md-6 col-md-offset-4 descripton-color transparent-div">
+                        <div class="col-xs-6 col-xs-offset-7">
                             <h3 class="text-nowrap hidden-xs ">Conduce cuando quieras</h3>
                             <h3 class="text-nowrap visible-xs">Conduce cuando quieras</h3>
-                            <p class="text-justify">Labcar es una opción flexible para alcanzar tus metas financieras</p>
-                            <button type="button" class="btn btn-warning Bdriver-btn">
+                            <p>Labcar es una opción flexible para alcanzar tus metas financieras</p>
+                            <button type="button" class="btn btn-warning Bdriver-btn" data-toggle="modal" data-target="#modal-driver">
                                 Conviértete en un Conductor
                             </button>
                         </div>
@@ -123,21 +127,364 @@
     <!--tracing the rute-->
     <section class="container-fluid container-box-two">
         <div class="row">
-            <div class="column">
+            <div class="col-xs-offset-1 col-sm-8 col-sm-offset-3 col-md-6 col-md-offset-1 ">
                 <h2>Tarifas</h2>
-                <h3>Consulta las tarifas de LabCar aquí</h3>
+                <h3 class="text-nowrap hidden-xs">Consulta las tarifas de LabCar aquí</h3>
+                <p class="text-nowrap visible-xs">Consulta las tarifas de LabCar aquí</p>
+                <br>
+                <!-- input 1: user pick-up -->
                 <span>
-                    <img src="assets/images/shape.png" alt="dot"> <div class="form-group">
-                            <label for="inputPassword2" class="sr-only">Password</label>
-                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-                          </div></span>
+                    <img src="assets/images/shape.png" alt="dot"> </span>
+                <span>
+                    <input class="form-group round-border" type="text" placeholder="Ingresa tu ruta aquí">
+                </span>
+                <br>
+                <!--input 2: user drop-off -->
+                <div>
+                    <br>
+                    <span>
+                        <img src="assets/images/shape2.png" alt="arrow"> </span>
+                    <span>
+                        <input class="form-group round-border" type="text" placeholder="Ingresa tu destino">
+                    </span>
+                    <br>
+                    <!-- Standard button -->
+                    <button type="button" class="btn btn-default hidden-xs">
+                        <b>¡Traza tu ruta! </b>
+                    </button>
+                    <!-- Standard button -->
+                    <button type="button" class="btn btn-default visible-xs center-block">
+                        <b>¡Traza tu ruta! </b>
+                    </button>
+                </div>
+                <!--Google Iframe Map -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <figure class="img-responsive col-md-offset-12 col-xs-1" id="mapframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15602.611868924896!2d-77.01613234999999!3d-12.135880199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle+america+del+sur!5e0!3m2!1sen!2spe!4v1518633444652"></iframe>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!--footer-->
+    <section class="container-fluid color-grey description-color">
+        <div class="row">
+            <div class="col-xs-10 col-md-12 col-lg-12 container-box-three">
+                <figure class="col-md-12 col-xs-12 col-lg-12 hidden-xs container-fluid">
+                    <img src="assets/images/logoBlanco.png" alt="Logo_Title" class="text-center">
+                    <hr class="col-xs-10 col-md-12 col-lg-12 hidden-xs">
+                </figure>
+
+                <!-- Cellphone vista-->
+                <figure class="col-md-12 col-xs-12 col-lg-12 visible-xs">
+                    <img src="assets/images/logoBlanco.png" alt="Logo_Title" class="title2 pull-right">
+                </figure>
+                <div class="col-md-6 col-md-offset-3 col-xs-offset-1 col-xs-2">
+                    <br>
+                    <div class="first-group pull-left hidden-xs">
+                        <p>
+                            <a>Viaja</a>
+                        </p>
+                        <p>
+                            <a>Conduce</a>
+                        </p>
+                        <p>
+                            <a>Cuidades</a>
+                        </p>
+                        <p>
+                            <a>Entrega</a>
+                        </p>
+                        <p>
+                            <a>¿Comó funciona?</a>
+                        </p>
+                        <p>
+                            <a>Países</a>
+                        </p>
+                        <p>
+                            <a>Seguridad</a>
+                        </p>
+                        <p>
+                            <a>Caminos</a>
+                        </p>
+                    </div>
+                    <div class="first-group pull-right visible-xs  ">
+                        <p>
+                            <a>Viaja</a>
+                        </p>
+                        <p>
+                            <a>Conduce</a>
+                        </p>
+                        <p>
+                            <a>Cuidades</a>
+                        </p>
+                        <p>
+                            <a>Entrega</a>
+                        </p>
+                        <p>
+                            <a>¿Comó funciona?</a>
+                        </p>
+                        <p>
+                            <a>Países</a>
+                        </p>
+                        <p>
+                            <a>Seguridad</a>
+                        </p>
+                        <p>
+                            <a>Caminos</a>
+                        </p>
+                    </div>
+                    <div class="second-group pull-right hidden-xs hidden-sm">
+                        <p>
+                            <a>Oportunidades</a>
+                        </p>
+                        <p>
+                            <a>Nuestra historia</a>
+                        </p>
+                        <p>
+                            <a>API de lab
+                                <ar</a>
+                        </p>
+                        <p>
+                            <a>Eventos</a>
+                        </p>
+                        <p>
+                            <a>Desarrolladores</a>
+                        </p>
+                        <p>
+                            <a>Servicios</a>
+                        </p>
+                        <p>
+                            <a>Laboratoria</a>
+                        </p>
+                        <p>
+                            <a>Coders</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="pull-left col-md-2 hidden-xs">
+                    <figure class="logos">
+                        <img class="width-img" src="assets/images/appstore.png" alt="apple_logo">
+                    </figure>
+                    <br>
+                    <figure class="logo-2">
+                        <img class="width-img" src="assets/images/enBadgeWebGeneric.png" alt="google_app">
+                    </figure>
+                </div>
+                <div class="pull-left col-xs-2 visible-xs">
+                    <figure class="logos">
+                        <img class="width-img" src="assets/images/appstore.png" alt="apple_logo">
+                    </figure>
+                    <br>
+                    <div class="pull-left col-xs-2 visible-xs">
+                        <figure class="logo-2">
+                            <img class="width-img" src="assets/images/enBadgeWebGeneric.png" alt="google_app">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="icons pull-left form-inline">
+                <i class="fab fa-facebook-f "></i>
+                  <i class="fab fa-twitter "></i> 
+                  <i class="fab fa-linkedin-in "></i>
+                  <i class="fab fa-apple "></i>
+                  <i class="fab fa-google-play "></i>
+            </div>-->
+        </div>
+        <hr class=" col-md-offset-1 col-md-10">
+        <p class="col-xs-12 col-md-offset-1 col-md-3 copyright">
+            <span>&copy;</span> LabCar Technologies Inc.</p>
+    </section>
+
+    <!--Modals: Start Session-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="start-session">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content deep-blue">
+                <div class="modal-header deep-blue">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="assets/modal/user-woman.png" alt="user-photo" class="photo-width center-block">
+                </div>
+                <div class="modal-body gray-div">
+                    <div class="group-form">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon glyphicon glyphicon-user" aria-hidden="true" id="sizing-addon3"></span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+                        </div>
+                        <br>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon glyphicon glyphicon-lock" aria-hidden="true" id="sizing-addon3"></span>
+                            <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon3">
+                        </div>
+                        <br>
+                        <div>
+                            <button type="button" class="btn btn-default orange-button center-block">Login</button>
+                        </div>
+                        <br>
+                        <div>
+                            <p class="text-center">Forgot password?
+                                <a href="#" class="color-red">Click Here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal: Register -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content deep-gray">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-default col-md-12 black-button">Ya tienes una cuenta?</button>
+                    </div>
+                    <p class="text-center">O CREA UNA NUEVA CUENTA</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Apellido">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-md-12">
+                            <input type="text" class="input-group form-control col-md-6" placeholder="Correo Electronico: ejemplo@correo.mx">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-md-12">
+                            <input type="text" class="input-group form-control col-md-6" placeholder="Contraseña">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-md-12">
+                            <input type="text" class="input-group form-control col-md-6" placeholder="Teléfono">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-md-12">
+                            <input type="text" class="input-group form-control col-md-6" placeholder="Opcional - Código de Invitación">
+                        </div>
+                        <br>
+                        <br>
+                        <!--dropdown-gris-->
+                        <div class="dropdown col-md-12">
+                            <button class="btn btn-default dropdown-toggle form-control col-md-12 light-gray" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                                ¿Cómo te enteraste de nosotros?
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="#">Redes Sociales</a>
+                                </li>
+                                <li>
+                                    <a href="#">Familiar</a>
+                                </li>
+                                <li>
+                                    <a href="#">Comerciales</a>
+                                </li>
+                                <li>
+                                    <a href="#">Otros</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group col-md-12">
+                            <button type="button" class="btn btn-default skye-blue text-center col-md-12">ENVIAR</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+    </div>
+    <!-- Modal:Be a driver -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-driver">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content deep-gray">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <p>
+                            <b> ¿Tienes un vehiculo de 4 puertas? </b>
+                        </p>
+                        <div>
+                            <select class="form-control">
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <br>
+                        <p>
+                            <b> Marca </b>
+                        </p>
+                        <div>
+                            <select class="form-control">
+                                <option value hidden>Selecciona tu marca de auto</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="toyota">Toyota</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                                <option value="Ford">Ford</option>
+                            </select>
+                            <h5>¿No ves la marca de tu vehiculo? Envia un correo electronico
+                                <span class="blue-color">sociosmdv@uber.com</span>
+                            </h5>
+                        </div>
+                        <br>
+                        <p>
+                            <b> Modelo </b>
+                        </p>
+                        <select class="form-control">
+                            <option value="M1">Modelo1</option>
+                            <option value="M2">Modelo2</option>
+                        </select>
+                        <br>
+                        <p>
+                            <b> Año </b>
+                        </p>
+                        <select class="form-control">
+                            <option value hidden>Selecciona el año de auto</option>
+                            <option value="2018">2018</option>
+                            <option value="2010">2010</option>
+                            <option value="2006">2006</option>
+                            <option value="2000">2000</option>
+                            <option value="1990">1990</option>
+                        </select>
+                        <br>
+                        <p>
+                            <b>Número de Matricula</b>
+                        </p>
+                        <div class="form-group">
+                            <input type="text" class="input-group form-control" placeholder="Numero de Matrícula">
+                        </div>
+                        <p>La información de tu matricula ayuda a tus clientes a identificar tu vehiculo</p>
+                        <br>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-default skye-blue text-center col-md-12">ENVIAR</button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <!--<script src="js/app.js"></script>-->
+    <script src="js/app.js"></script>
 </body>
