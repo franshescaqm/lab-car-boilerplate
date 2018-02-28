@@ -31,13 +31,13 @@ Lab<ar es una aplicación web responsiva en donde los usuarios pueden pedir serv
 
 ## Modales:  
 
-- Registro de Información de Usuario:__  
+- __Registro de Información de Usuario:__  
 
 ![registo de información](assets/readme/registro.png)
 
 - __Registro de usuarios:__
 
-![registo de usuario](assets/readme/inicia_sesion)
+![registo de usuario](assets/readme/inicia_sesion.png)
 
 - __Registro de conductores:__
 
