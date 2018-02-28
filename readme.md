@@ -17,11 +17,11 @@ Lab<ar es una aplicación web responsiva en donde los usuarios pueden pedir serv
 
 ## Secciones
 
-  1. En la parte de header hemos creado un Nav-bar, con la ayuda de bootstrap, para la versión web. Las opciones a escoger han sido 'Inicio de sesión', 'Viajes' para ver los trayectos y 'Conduce' para los trabajadores de nuestEra app. En la versión mobile, hemos incluido esta sección en un menú hamburguesa.
+  1. En la parte de header hemos creado un Nav-bar, con la ayuda de bootstrap, para la versión web. Las opciones a escoger han sido 'Inicio de sesión', 'Viajes' para ver los trayectos y 'Conduce' para los trabajadores de nuestra app. En la versión mobile, hemos incluido esta sección en un menú hamburguesa.
 
-  2. En esta sección queremos captar el ojo del usuario con una imagen relevante a nuestro negocio y la opción de registro para el usuario que desea usar nuestra aplicación o un conductor que desee trabajar con nosotros
+  2. En esta sección queremos captar el ojo del usuario con una imagen relevante a nuestro negocio y la opción de registro para los que desean usar nuestra aplicación o un conductor que desee insertarse en el mundo laboral con nosotros
 
-  3. En la tercera sección hacemos un introducción breve sobre como funciona nuestra aplicación y .
+  3. En la tercera sección hacemos un introducción breve sobre nuestra aplicación.
 
   4. En la cuarta sección, recalcamos la opción para que conductores experimentados empiecen a trabajar de la mano con nosotros para que puedan alcanzar sus metas financieras y sean dueños de su tiempo.
 
