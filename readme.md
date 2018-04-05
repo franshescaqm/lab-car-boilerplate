@@ -1,8 +1,8 @@
 # Lab<ar
   
+  Lab<ar es una aplicación web responsiva en donde los usuarios pueden pedir servicio de taxi para sus travesias necesarias o unirse a la empresa a encontrar una oportunidad laboral. Cualquiera de estas opciones que desees usar, te damos la grata bienvenida a LAB<AR!
+  
   ![web-ver](https://user-images.githubusercontent.com/32288447/37790836-9bf8542a-2dd5-11e8-92c7-f87cd84c5cfc.png)
-
-Lab<ar es una aplicación web responsiva en donde los usuarios pueden pedir servicio de taxi para sus travesias necesarias o unirse a la empresa a encontrar una oportunidad laboral. Cualquiera de estas opciones que desees usar, te damos la grata bienvenida a LAB<AR!
 
 ## Desarrollado para
 
